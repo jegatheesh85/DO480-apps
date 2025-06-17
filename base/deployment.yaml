@@ -19,8 +19,10 @@ spec:
         name: mysql
     spec:
       containers:
-      - image: registry.redhat.io/rhel8/mysql-80:latest
-        name: mysql
+      #- image: registry.redhat.io/rhel8/mysql-80:latest
+      - image: mysql 
+        #name: mysql
+        name: cluster-mysql 
         env:
         - name: MYSQL_ROOT_PASSWORD
           value: r00tpa55
